@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(page_title="青春提案所", page_icon="💡", layout="wide")
 
 st.title("💡 青春提案所：打破框架的 N 個校園點子")
-st.markdown("歡迎來到 106 班的校園白皮書特展。請點開各組的政策卷宗，檢視不同利益關係人的觀點交鋒！")
+st.markdown("歡迎來到校園提案特展。可以點開各組的提案，看看不同立場的觀點討論！")
 st.divider()
 
 # 1. 模擬表單資料 (已全面更新為：學生、教師、家長、校長、部長、教授)
