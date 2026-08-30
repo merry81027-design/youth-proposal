@@ -1,15 +1,14 @@
 [theme]
-# 按鈕與重點強調的主色調（例如：熱血的珊瑚橘紅）
-primaryColor = "#FF6B6B"
+# 鼠尾草綠：象徵生長、治癒與和平，沒有攻擊性
+primaryColor = "#739072"
 
-# 網頁整體的背景顏色（例如：極淺的暖灰色，閱讀起來眼睛不累）
-backgroundColor = "#F9F9F9"
+# 燕麥奶白：帶有微暖黃光的底色，視覺極度舒適
+backgroundColor = "#FAF7F2"
 
-# 側邊欄與卡片底色的背景顏色（例如：純白）
-secondaryBackgroundColor = "#FFFFFF"
+# 亞麻灰：做為側邊欄，與主背景形成溫柔的層次
+secondaryBackgroundColor = "#EAE6DF"
 
-# 網站文字的顏色（例如：深灰近黑，比純黑色柔和）
-textColor = "#2D3436"
+# 摩卡深棕：取代銳利的黑色，讓文字像是在對話般溫潤
+textColor = "#4A443C"
 
-# 字體設定（支援 sans serif, serif, monospace）
 font = "sans serif"
