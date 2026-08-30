@@ -3,8 +3,125 @@ import pandas as pd
 
 st.set_page_config(page_title="青春提案所", page_icon="💡", layout="wide")
 
-st.title("💡 青春提案所：打破框架的 N 個校園點子")
-st.markdown("歡迎來到校園提案特展。可以點開各組的提案，看看不同立場的觀點討論！")
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap');
+
+    :root {
+        --primary: #739072;
+        --primary-deep: #5a775a;
+        --background: #FAF7F2;
+        --secondary-bg: #EAE6DF;
+        --text: #4A443C;
+        --card: #FFFDFB;
+        --line: #D9D1C5;
+        --soft: #9AAE96;
+        --highlight: #F2E7D2;
+    }
+
+    .stApp {
+        background:
+            radial-gradient(circle at top left, rgba(115, 144, 114, 0.12), transparent 24%),
+            linear-gradient(180deg, #F9F5F0 0%, var(--background) 100%);
+        color: var(--text);
+    }
+
+    .block-container {
+        max-width: 1220px;
+        padding: 3rem 2.2rem 4rem;
+    }
+
+    h1, h2, h3, p, span, label, button, [data-testid="stMarkdownContainer"], [data-testid="stExpander"] {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    h1 {
+        color: var(--text);
+        font-size: clamp(2.6rem, 5vw, 4.1rem);
+        font-weight: 900;
+        line-height: 0.96;
+        letter-spacing: -0.06em;
+        margin: 0.2rem 0 0.7rem;
+    }
+
+    h2, h3 {
+        color: var(--text);
+        font-weight: 800;
+    }
+
+    [data-testid="stCaptionContainer"] {
+        color: var(--primary-deep);
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    [data-testid="stImage"] img {
+        border-radius: 18px;
+        border: 3px solid rgba(115, 144, 114, 0.18);
+        box-shadow: 0 14px 32px rgba(74, 68, 60, 0.08);
+    }
+
+    [data-testid="stExpander"] {
+        background: rgba(255,255,255,0.38);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        margin-top: 0.7rem;
+    }
+
+    [data-testid="stExpander"] summary p {
+        color: var(--text);
+        font-weight: 700;
+    }
+
+    .stLinkButton a {
+        background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+        border: 0;
+        border-radius: 999px;
+        color: #fff;
+        font-weight: 700;
+        padding: 0.7rem 1.2rem;
+        box-shadow: 0 10px 22px rgba(90, 119, 90, 0.22);
+    }
+
+    .stLinkButton a:hover {
+        background: linear-gradient(135deg, var(--primary-deep), var(--primary));
+        color: white;
+    }
+
+    [data-testid="column"] {
+        background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.72));
+        border: 1px solid rgba(115, 144, 114, 0.18);
+        border-radius: 22px;
+        padding: 1.2rem 1.25rem 0.9rem;
+        box-shadow: 0 16px 40px rgba(74, 68, 60, 0.08);
+    }
+
+    [data-testid="column"] > div {
+        position: relative;
+    }
+
+    [data-testid="column"] h3 {
+        background: var(--highlight);
+        display: inline-block;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        border: 1px solid rgba(115, 144, 114, 0.18);
+    }
+
+    hr {
+        border-color: rgba(115, 144, 114, 0.18);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown("<div style='color:#739072;font-size:0.8rem;font-weight:800;letter-spacing:0.16em;'>CAMPUS UTOPIA / 2026</div>", unsafe_allow_html=True)
+st.title("青春提案所")
+st.markdown("<div style='background:#EAE6DF; padding:0.8rem 1rem; border-left:6px solid #739072; border-radius:10px; font-size:1.1rem; color:#4A443C; font-weight:700; margin-bottom:0.8rem;'>打破框架的 N 個校園點子</div>", unsafe_allow_html=True)
+st.markdown("歡迎來到校園烏托邦特展。點開各組提案，看看不同立場如何交鋒，再想想你會支持哪一方。")
 st.divider()
 
 # 1. 模擬表單資料 (已全面更新為：學生、教師、家長、校長、部長、教授)
@@ -83,3 +200,4 @@ for index, row in df.iterrows():
         # 互動按鈕
         st.link_button("💬 前往留言質詢區", "#")
         st.divider()
+
