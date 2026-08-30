@@ -1,3 +1,4 @@
+import streamlit.components.v1 as components
 import streamlit as st
 import pandas as pd
 
@@ -198,6 +199,9 @@ for index, row in df.iterrows():
                 st.write(row["角色6_教授"])
         
         # 互動按鈕
-        st.link_button("💬 前往留言質詢區", "#")
-        st.divider()
+        # 把原本的按鈕替換成這段鑲嵌程式碼：
+st.markdown("### 💬 政策質詢與留言區")
+# 這裡貼上妳 Padlet 的專屬分享網址
+components.iframe("https://padlet.com/embed/https://padlet.com/merry81027/padlet-iipny64x1ou2s45t", height=400, scrolling=True)
+st.divider()
 
