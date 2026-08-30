@@ -168,11 +168,11 @@ cols = st.columns(2)
 
 for index, row in df.iterrows():
     with cols[index % 2]:
-     st.subheader(row["組別名稱"])
+     # 下面這些程式碼的最前面，必須對齊得一模一樣！
+        st.subheader(row["組別名稱"])
         st.caption(f"🏷️ 議題：{row['議題類別']}")
         
-        # ----- 核心修改區塊開始 -----
-        # 在這裡切出兩個小區塊，比例為 1:2
+        # 切出兩個小區塊，比例為 1:2
         img_col, text_col = st.columns([1, 2])
         
         # 左邊的小區塊放圖片
@@ -182,7 +182,7 @@ for index, row in df.iterrows():
         # 右邊的大區塊放痛點與解法
         with text_col:
             st.markdown(f"**🔥 我們的痛點：** {row['一句話痛點']}")
-        
+
         # --- 核心改動：6 個全新角色的 Tabs ---
         with st.expander("📖 展開觀看各方角色觀點與政策細節"):
             tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
