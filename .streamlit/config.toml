@@ -1,0 +1,15 @@
+[theme]
+# 按鈕與重點強調的主色調（例如：熱血的珊瑚橘紅）
+primaryColor = "#FF6B6B"
+
+# 網頁整體的背景顏色（例如：極淺的暖灰色，閱讀起來眼睛不累）
+backgroundColor = "#F9F9F9"
+
+# 側邊欄與卡片底色的背景顏色（例如：純白）
+secondaryBackgroundColor = "#FFFFFF"
+
+# 網站文字的顏色（例如：深灰近黑，比純黑色柔和）
+textColor = "#2D3436"
+
+# 字體設定（支援 sans serif, serif, monospace）
+font = "sans serif"
