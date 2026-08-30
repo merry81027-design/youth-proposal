@@ -121,7 +121,7 @@ st.markdown(
 st.markdown("<div style='color:#739072;font-size:0.8rem;font-weight:800;letter-spacing:0.16em;'>CAMPUS UTOPIA / 2026</div>", unsafe_allow_html=True)
 st.title("青春提案所")
 st.markdown("<div style='background:#EAE6DF; padding:0.8rem 1rem; border-left:6px solid #739072; border-radius:10px; font-size:1.1rem; color:#4A443C; font-weight:700; margin-bottom:0.8rem;'>打破框架的 N 個校園點子</div>", unsafe_allow_html=True)
-st.markdown("歡迎來到校園烏托邦特展。點開各組提案，看看不同立場如何交鋒，再想想你會支持哪一方。")
+st.markdown("歡迎來到校園烏托邦特展。點開各組提案，看看不同立場的討論，想想哪個提案最可行？")
 st.divider()
 
 # 1. 模擬表單資料 (已全面更新為：學生、教師、家長、校長、部長、教授)
